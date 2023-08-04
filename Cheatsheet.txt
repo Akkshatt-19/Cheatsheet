@@ -1,0 +1,72 @@
+
+RBENV CHEATSHEET
+
+## verify
+type rbenv
+#=> "rbenv is a function"
+
+## list all available versions:
+rbenv install -l
+
+## install a Ruby version:
+rbenv install 2.2.1
+
+## uninstall a Ruby version:
+rbenv uninstall 2.2.1
+
+## Set application specific version number (written in `.ruby-version`)
+rbenv local 2.2.2
+
+## Unset application specific version number
+rbenv local --unset
+
+## Set global version number for a user (written in `~/.rbenv/version`)
+rbenv global 2.2.2
+
+## Unset application specific version number
+rbenv global --unset
+
+## System version of ruby
+The special version name system tells rbenv to use the system Ruby
+
+## Set shell-specific version number
+rbenv shell 2.2.2
+
+## Unset application specific version number
+rbenv shell --unset
+
+## Installed versions
+rbenv versions
+
+## Current version
+rbenv version
+
+## ruby installed or gem installed which provides commands
+rbenv rehash
+
+## display path to ruby executable 
+rbenv which
+
+
+
+RVM CHEATSHEET
+
+rvm list
+rvm list gemsets
+
+rvm gemset list
+rvm gemset create <name>
+rvm gemset use <name>
+
+rvm install <Ruby version>
+
+rvm system  # Selete distro Ruby
+
+# Install Gem into a version
+rvm <Ruby version> do gem install <gem>
+
+# Install bundle with a version
+rvm 1.9.3 do bundle installS
+
+
+
